@@ -98,9 +98,20 @@ if __name__ == "__main__":
         [0],
     ])
     
-    # Cria a rede neural com uma camada oculta de 2 neurônios
-    
+    # Cria a rede neural com uma camada oculta de 4 neurônios - parametros estaveis, confiaveis e com convergencia
     nn = NeuralNetwork(input_size=2, hidden_sizes=[4], output_size=1, learning_rate=0.1, epochs=15000)
+
+    ##parametros com camada menor que o necessário
+    #nn = NeuralNetwork(input_size=2, hidden_sizes=[2], output_size=1, learning_rate=0.1, epochs=1000)
+
+    ## camadas que tem convergencia mas pode causar erros
+    #nn = NeuralNetwork(input_size=2, hidden_sizes=[3], output_size=1, learning_rate=0.5, epochs=5000)
+
+    # camadas insuficientes para convergencia, mesmo com muitos ciclos
+    #nn = NeuralNetwork(input_size=2, hidden_sizes=[2], output_size=1, learning_rate=0.01, epochs=20000)
+
+    # camadas suficientes para convergencia, mesmo com um alto aprendizado, permanece estagnado
+    #nn = NeuralNetwork(input_size=2, hidden_sizes=[2], output_size=1, learning_rate=1.0, epochs=20000)
     
 
     
