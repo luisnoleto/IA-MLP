@@ -110,7 +110,7 @@ if __name__ == "__main__":
     # camadas insuficientes para convergencia, mesmo com muitos ciclos
     #nn = NeuralNetwork(input_size=2, hidden_sizes=[2], output_size=1, learning_rate=0.01, epochs=20000)
 
-    # camadas suficientes para convergencia, mesmo com um alto aprendizado, permanece estagnado
+    # camadas insuficientes para convergencia, mesmo com um alto aprendizado, permanece estagnado
     #nn = NeuralNetwork(input_size=2, hidden_sizes=[2], output_size=1, learning_rate=1.0, epochs=20000)
     
 
